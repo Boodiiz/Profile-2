@@ -1,0 +1,801 @@
+
+/* shared point */
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes title
+{
+  0%
+  {
+    content: " |";
+  }
+  3%
+  {
+    content: " L|";
+  }
+  6%
+  {
+    content: " La|";
+  }
+  9%
+  {
+    content: " Lar|";
+  }
+  12%
+  {
+    content: " Larr|";
+  }
+  15%
+  {
+    content: " Larry|";
+  }
+  18%
+  {
+    content: " Larry |";
+  }
+  21%
+  {
+    content: " Larry D|";
+  }
+  24%
+  {
+    content: " Larry Da|";
+  }
+  27%
+  {
+    content: " Larry Dan|";
+  }
+  30%
+  {
+    content: " Larry Dani|";
+  }
+  32%
+  {
+    content: " Larry Danie|";
+  }
+  34%
+  {
+    content: " Larry Daniel|";
+  }
+  36%
+  {
+    content: " Larry Daniels|";
+  }
+  38%
+  {
+    content: " Larry Daniel|";
+  }
+  40%
+  {
+    content: " Larry Danie|";
+  }
+  42%
+  {
+    content: " Larry Dani|";
+  }
+  44%
+  {
+    content: " Larry Dan";
+  }
+  46%
+  {
+    content: " Larry Da|";
+  }
+  48%
+  {
+    content: " Larry D|";
+  }
+  49%
+  {
+    content: " Larry|";
+  }
+  50%
+  {
+    content: " Larr|";
+  }
+  51%
+  {
+    content: " Lar|";
+  }
+  52%
+  {
+    content: " La|";
+  }
+  53%
+  {
+    content: " L|";
+  }
+  54%
+  {
+    content: " |";
+  }
+  55%
+  {
+    content: " D|";
+  }
+  57%
+  {
+    content: " De|";
+  }
+  59%
+  {
+    content: " Dev|";
+  }
+  60%
+  {
+    content: " Deve|";
+  }
+  61%
+  {
+    content: " Devel|";
+  }
+  62%
+  {
+    content: " Develo|";
+  }
+  63%
+  {
+    content: " Develop|";
+  }
+  64%
+  {
+    content: " Develope|";
+  }
+  65%
+  {
+    content: " Developer|";
+  }
+  66%
+  {
+    content: " Develope|";
+  }
+  67%
+  {
+    content: " Develop|";
+  }
+  68%
+  {
+    content: " Develo|";
+  }
+  69%
+  {
+    content: " Devel|";
+  }
+  70%
+  {
+    content: " Deve|";
+  }
+  71%
+  {
+    content: " Dev|";
+  }
+  72%
+  {
+    content: " De|";
+  }
+  74%
+  {
+    content: " D|";
+  }
+  76%
+  {
+    content: " |";
+  }
+  77%
+  {
+    content: " D|";
+  }
+  80%
+  {
+    content: " De|";
+  }
+  82%
+  {
+    content: " Des|";
+  }
+  84%
+  {
+    content: " Desi|";
+  }
+  85%
+  {
+    content: " Desig|";
+  }
+  87%
+  {
+    content: " Design|";
+  }
+  89%
+  {
+    content: " Designe|";
+  }
+  90%
+  {
+    content: " Designer|";
+  }
+  91%
+  {
+    content: " Designe|";
+  }
+  92%
+  {
+    content: " Design|";
+  }
+  93%
+  {
+    content: " Desig|";
+  }
+  94%
+  {
+    content: " Desi|";
+  }
+  95%
+  {
+    content: " Des|";
+  }
+  96%
+  {
+    content: " De|";
+  }
+  97%
+  {
+    content: " D|";
+  }
+  100%
+  {
+    content: " |";
+  }
+  
+}
+/* ============================================== */
+/* naaaaaaaaav bar */
+
+.navbar-nav > li > a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.navbar-nav > li .active:after {
+  width: 100%;
+}
+/* ========================== */
+
+
+
+
+
+
+/* ======================================== */
+/* home section */
+
+div.home-section
+{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../imgs/bg.jpg');
+  /* background-position: center center; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-section h1
+{
+  font-size: 4rem;
+}
+.content h2
+{
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+ h2::after
+{
+  content: " ";
+  animation: title 5s infinite;
+  color: white;
+  font-weight: bold;
+}
+.circle
+{
+  height: 35px;
+  width: 35px;
+}
+ul
+{
+  cursor: pointer;
+}
+
+/* ====================================== */
+/* about section */
+
+.about-section
+{
+  padding-block: 100px;
+}
+
+.hero-img .modify
+{
+  width: 90%;
+  z-index: 2;
+  position: relative;
+}
+.hero-img::before
+{ 
+  content: " ";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 80%;
+  height: 75%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content h3
+{
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.subtitle
+{
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.content .modify
+{
+  max-width: 500px;
+}
+
+.skills-progress
+{
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+.skills-progress span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+}
+
+.skills-progress span::after
+{
+  content: attr(data-value);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+}
+
+button
+{
+  transition: all 1s;
+}
+button.first:hover
+{
+  background-color: white !important;
+  color: black !important;
+}
+button.second:hover
+{
+  background-color: black !important;
+  color: white !important;
+}
+
+/* ============================================ */
+/* services section */
+.services-section
+{
+  background-color: #f7f7f7;
+}
+.services-section h1
+{
+  font-size: 4rem;
+}
+.services-section h1::before
+{
+  content: "";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 247px;
+  height: 32px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-51%,104%);
+  z-index: -1;
+}
+
+.row .item
+{
+  padding: 24px 20px;
+  background: #fff;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 30px;
+  border-radius: 5px;  
+}
+
+.item .icon-circle
+{
+  background-color: #f4f4f4;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: all 1s;
+}
+.container .row .item:hover .icon-circle
+{
+  background-color: black;
+  color: white;
+}
+/* ======================================= */
+/* portfolio section */
+
+.portfolio-section h1
+{
+  font-size: 4rem;
+}
+.portfolio-section h1::before
+{
+  content: "";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 276px;
+  height: 32px;
+  bottom: 50%;
+  left: 51%;
+  transform: translate(-54%,104%);
+  z-index: -1;
+}
+
+
+
+.nav-link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transition: all 0.5s;
+}
+
+.nav-pills .active:after {
+  width: 73%;
+}
+.nav-pills .nav-link.active
+{
+  background-color: transparent;
+  opacity: .5;
+}
+
+/* gallery  */
+
+.overlay
+{
+  position: absolute;
+  visibility:hidden;
+  width: 95%;
+  height: 95%;
+  margin-inline: 2.5%;
+  top: 52%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translate(0%, -50%);
+  transition: all .5s;
+}
+.sm-title
+{
+  position: absolute;
+  top: 35%;
+  transition: all .5s;
+
+}
+.img-icons
+{ 
+  position: absolute;
+  top: 55%;
+  transition: all .5s;
+}
+
+.item-img:hover .overlay
+{
+  visibility:visible;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  margin-inline: 2.5%;
+  top: 50%;
+  left: 0;
+  background-color: white;
+  transform: translate(0%, -50%);
+}
+.item-img:hover .sm-title
+{
+  top: 40%;
+}
+.item-img:hover .img-icons
+{
+  top: 50%;
+}
+.first-icon, .second-icon
+{
+  width: 30px;
+  height: 30px;
+  font-size: .75rem;
+}
+
+.first-icon:hover, .second-icon:hover,
+.first-icon:hover i, .second-icon:hover i
+{
+  border-color: #1c1c1c !important;
+  color: black !important;
+  background-color: white !important;
+}
+
+/* testimonials section */
+
+.testimonials-section
+{
+  background-color: #f7f7f7; 
+  padding-block: 30px;
+}
+.testimonials-section h1::before
+{
+  content: "";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 233px;
+  height: 26px;
+  bottom: 50%;
+  left: 51%;
+  transform: translate(-56%,106%);
+  z-index: -1;
+}
+.content img.modify
+{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.carousel-indicators
+{
+  position: static;
+  gap: 7px;
+}
+.carousel-indicators [data-bs-target]
+{
+  width: 10px ;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #999;
+}
+
+/* ================================ */
+/* sixth section */
+
+.row .itemm
+{
+ box-shadow:none;
+}
+.numbers-section div.itemm i
+{
+  font-size: 33px;
+}
+/* ======================================= */
+/* seventh section */
+
+.team-section
+{
+  background-color: #f7f7f7; 
+  padding-block: 30px;
+}
+.team-section h1::before
+{
+  content: "";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 197px;
+  height: 26px;
+  bottom: 50%;
+  left: 51%;
+  transform: translate(-56%,114%);
+  z-index: -1;
+}
+.lon
+{
+  background-color: rgb(93, 45, 45);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+div.single-team div h5
+{
+  font-size: 2.25rem;
+  line-height: 32px;
+  font-weight: 300;
+}
+div.img-area
+{
+  position: relative;
+}
+
+
+div.social-layer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  visibility: hidden;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  rotate: y -180deg;
+  transition: all .5s;
+}
+.single-team:hover div.social-layer
+{
+  visibility: visible;
+  width: 97%;
+  height: 97%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotateY(180deg);
+}
+div.img-area img
+{
+  transition: all 1s;
+}
+.single-team:hover div.img-area img
+{
+  transform: scale(1.15);
+}
+div.social-layer ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 6px;
+}
+.circle-list
+{
+  background-color: black;
+  color: white !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.circle-list:hover
+{
+  background-color: white;
+  color: black !important;
+}
+.circle-list:hover i
+{
+  color: black !important;
+}
+
+/* ======================== */
+/* eight section */
+
+.contact-section h1
+{
+  padding-top: 52px !important;
+}
+.contact-section h1::before
+{
+  content: "";
+  position: absolute;
+  background-image: url('../imgs/dots.png');
+  background-repeat: repeat;
+  width: 211px;
+  height: 26px;
+  bottom: 50%;
+  left: 51%;
+  transform: translate(-57%,114%);
+  z-index: -1;
+}
+
+.circle-contact
+{
+  background-color: gray;
+  color: black !important;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+  transition: 1s;
+}
+.item-contact:hover .circle-contact
+{
+  background-color: black;
+  color: gray !important;
+}
+
+div.item-contact p.modify
+{
+  font-size: 17px;
+  max-width: 259px;
+}
+
+div.form-group input
+{
+  border-color: transparent !important;
+}
+textarea
+{
+  border-color: transparent !important;
+}
+
+input.modify
+{
+  border-style: solid;
+  transition: .75s;
+}
+input.modify:hover
+{
+  background-color: white !important;
+  color: black !important;
+}
+/* ========================================= */
+/* footer section */
+
+footer
+{
+  padding: 30px;
+}
+
+footer p
+{
+  font-size: 13px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
